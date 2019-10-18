@@ -2,20 +2,45 @@
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
-<title>Topic One: JavaScript</title>
+<title>Topic Two: JavaScript Objects</title>
 
 <script src="topic02_jsObjects.js"></script>
 </head>
 
 
 <body>
-    <h1>Topic02: JavaScript Objects</h1>
+    <h1>Topic02: JavaScript Objects</h1><br>
     <h3>Object Literal</h3>
-    <p>I have created two objects called employee_1 and employee_2.<br>
-    Please enter either the number 1 or 2 to view the object properties.</p>
+    <p>I have created two objects called employee_1 and employee_2. Please<br>
+    enter either the number 1 or 2 to view a few of the object properties.</p>
     <input type="text" id="user_input">
     <button type="button" onclick="createObject()">View Employee Info</button>
-    <div id="display_info"></div><br>
+    <div id="display_1"></div><br>
+
+    <h3>Add Properties to an Exsisting Object</h3>
+    <p>We will use the employee_1 object created above and add a property<br>
+    to our object. No need to re-code the literal, just add a property<br>
+    by declaring our objectName.property and set it equal to the data we <br>
+    wish to insert into that property. We will add a hireDate property to <br>
+    employee_1. <br><br>
+    <button type="button" onclick="createObject()">Show New Property</button>
+    <div id="display_2"></div><br>
+
+    <h3>Object.create()</h3>
+    <p>We will use this method to create an object from an already exsisting<br>
+    object. We will take employee_2 and use it as a prototype to create employee_3.<br>
+    From there we can edit the properties, but the properties that we do not change<br>
+    will remain the same as the properties from employee_2.</p><br>
+    <button type="button" onclick="createObject()">View Employee_3 Info</button><br>
+    <div id="display_3"></div>
+
+    <h3>This Method</h3>
+    <p>We have created a function as part of the employee_1 object that will<br>
+    display a list of all the information we have about employee_1. We use the<br>
+    'this' keyword to refer to the employee_1 object and call it's properties.</p><br>
+    <button type="button" onclick="displayEmployeeInfo()">Show Employee_1 Full Profile</button>
+    <div id="display_4"></div><br>
+ 
     
 
 </body>
