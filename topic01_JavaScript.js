@@ -7,6 +7,50 @@ function addOddLoop(){
 	}
     document.getElementById("loops").innerHTML = sum;
 }
+
+function forInLoop(){
+    var text = "";
+    var employee_1 = {employee_id:1, firstName:"Jared", lastName:"Purcell", address:"17 Cherry Tree Ln", 
+                      city:"Las Vegas", state:"Nevada", zipcode:"911", payment_type:"Direct Deposit"};
+    var i;
+    for(i in employee_1){
+        text += employee_1[i] + " ";
+    }
+    document.getElementById("forInLoop").innerHTML = text;
+}
+
+function forOfLoop(){
+    var employee_1 = ["Jared", "Purcell", "17 Cherry Tree Ln", 
+                      "Las Vegas", "Nevada", "911", "Direct Deposit"];
+    var i;
+    var newWindow = window.open();
+    for(i of employee_1){
+        newWindow.document.write(i + "<br >");
+    }
+}
+
+function whileLoop(){
+    var text = "";
+    var i = 100; 
+
+    while (i > -1){
+        text += "<br>" + i;
+        i -= 25;
+    }
+    document.getElementById("whileLoop").innerHTML = text;
+}
+
+function doWhileLoop(){
+    var text = "";
+    var i = 0;
+
+    do {
+        text += "<br>" + i;
+        i += 25;
+    } while (i < 101);
+    document.getElementById("doWhileLoop").innerHTML = text;
+}
+
 // This is the conitional statements section
 function sleepInConditions(){
     var now = new Date();
@@ -74,7 +118,7 @@ function fillArray(){
     var favFoods = ["steak","crab legs","tacos","hamburger","salmon","pizza"];
     var favDrinks = [];
     favDrinks[0] = "lemonade";
-    favDrinks[1] = "spite";
+    favDrinks[1] = "sprite";
     favDrinks[2] = "orange juice";
     favDrinks[3] = "kool-aid";
     favDrinks[4] = "rootbeer";

@@ -10,13 +10,41 @@
 
 <body>
     <h1>Topic01: JavaScript</h1>
-    <h3>Loops</h3>
+    <h3>For Loop</h3>
     <p>The program will prompt the user for an integer,<br>
     and then sum all the odd numbers less than and including<br>
     the given number if the given number is odd.</p>
     Please Enter An Integer: <input type="text" id="user_input">
     <button type="button" onclick="addOddLoop()">Add Odd Integers</button>
     <div id="loops"></div><br>
+
+    <h3>For In Loop</h3>
+    <p>We have an object called employee_1 with multiple properties<br>
+    The for in loop will loop through that object and display all the <br>
+    properties within</p>
+    <button type="button" onclick="forInLoop()">Loop Through Object</button>
+    <div id="forInLoop"></div><br>
+
+    <h3>For Of Loop</h3>
+    <p>We have an array set with all the properites of employee_1<br>
+    like the object above. The for of loop will loop through and<br>
+    display all the elements of this array</p>
+    <button type="button" onclick="forOfLoop()" value="Open Window" target="_blank">Loop Through Array</button>
+    <div id="forOfLoop"></div><br>
+
+    <h3>While Loop</h3>
+    <p>This program uses a while loop to countdown from 100 to 0<br>
+    by 25. The variable [i] is set to 100. While it is greater<br>
+    than -1, it will continue to decrement by 25.</p>
+    <button type="button" onclick="whileLoop()">Display While Loop</button>
+    <div id="whileLoop"></div><br>
+
+    <h3>Do While Loop</h3>
+    <p>This program will do the opposite from the while loop above.<br>
+    It will count up from 0 to 100 by increments of 25. The variable [i]<br>
+    will be set to 0. It will do the loop while [i] is less than 101.<br></p>
+    <button type="button" onclick="doWhileLoop()">Display Do While Loop</button>
+    <div id="doWhileLoop"></div><br>
 
     <h3>Conditional Statements</h3>
     <p>This program will advise the user if he/she can sleep in.<br>
@@ -51,9 +79,10 @@
 
     <h3>Arrays and Associative Arrays</h3>
     <p>I have filled two arrays. One with all my favorite foods and the other<br>
-    with all my favorite drinks. This program will prompt the user for 2 intger<br>
-    values between 0-5. It will then display what we will be eating for dinner <br>
-    as well as what we will have to drink based on the array element.
+    with all my favorite drinks. The foods array is declared as a literal while<br>
+    the drinks array is declared as an associative array. This program will prompt <br>
+    the user for 2 integer values between 0-5. It will then display what we will be <br>
+    eating for dinner as well as what we will have to drink based on the array element.
     </p>
     <input type="text" id="userInput1">
     <input type="text" id="userInput2">
